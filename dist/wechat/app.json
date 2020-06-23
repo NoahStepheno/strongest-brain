@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "黑白格",
+    "navigationBarBackgroundColor": "#282c34"
+  }
+}
