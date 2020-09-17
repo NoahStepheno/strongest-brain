@@ -10,6 +10,7 @@ import {
   totalZeroWithoutIgnore
 } from '../../components/BlockList/interactive'
 import { showModal } from '../../helpers/helper'
+import usePopup from '../../hooks/usePopup'
 
 export default () => {
   const block = React.useRef()
@@ -45,6 +46,14 @@ export default () => {
       })
     }
   }
+
+  const popupRef = React.useRef()
+  const Popup = usePopup({ title: '123', ref: popupRef })
+
+  React.useEffect(() => {
+    console.log('123', popupRef)
+    popupRef.current.show()
+  }, [])
 
   useAppEvent('onShareAppMessage', () => ({
     title: '最强大脑同款题目，防止老年痴呆。',
@@ -86,6 +95,7 @@ export default () => {
           提交
         </Button>
       </View>
+      <Popup />
     </View>
   );
 };

@@ -12,6 +12,7 @@
     "build": "cross-env NODE_ENV=production remax build -t"
   },
   "dependencies": {
+    "anna-remax-ui": "^1.9.1",
     "antd-mobile": "^2.3.3",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",

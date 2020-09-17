@@ -1,1 +1,2 @@
-<import src="/base.wxml"/> <template is="REMAX_TPL" data="{{root: root}}" />
+<import src="/base.wxml"/>
+<template is="REMAX_TPL" data="{{root: root}}" />
